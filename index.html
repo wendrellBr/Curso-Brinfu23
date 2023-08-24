@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patas</title>
+  <link rel="icon" type="imagem/png" href="img/favic.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!-- . header boas vindas -->
+  <header id="cabecalho">
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-box">
+        <button class="logo" id="theme-toggle">
+          <img src="" id="img-theme"> Patas
+        </button>
+
+        <img src="img/sol.png" id="img-theme-day" hidden>
+        <img src="img/lua.png" id="img-theme-night" hidden>
+
+
+        <ul class="nav-links">
+
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="nomeLogo">
+      <h2>Patas e Companhia</h2>
+      <p class="sobre">O melhor do mundo animal em um só lugar! </p>
+    </div>
+
+    <div class="logotipo">
+      <img src="img/Logotipo.png" alt="">
+    </div>
+
+  </header>
+
+
+  <!-- . seção de cards informativos -->
+  <section id="cartoes-lista">
+    <h2>Conheça mais..</h2> <!-- divisor de sessão-->
+
+    <div class="cartoes-caixa">
+
+      <div class="cartao">
+        <div id="cartao-1" class="cartao-img"></div>
+        <div class="cartao-texto">
+          <p>
+            Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de mais de 10 ONGs e protetores
+            parceiros.
+          </p>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div id="cartao-2" class="cartao-img"></div>
+        <div class="cartao-texto">
+          <p>
+            vacinação correta proporciona uma vida mais longa e saudável para os pets, garantindo uma proteção contra
+            doenças infecciosas.
+          </p>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div id="cartao-3" class="cartao-img"></div>
+        <div class="cartao-texto">
+          <p>
+            Ampla equipe de veterinários e profissionais, para o cuidado da saúde do seu melhor amigo.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- . seção separador -->
+  <section id="separador">
+    <h3>Faça parte dessa grande familia!</h3>
+    <button class="btn">Quero participar.</button>
+  </section>
+
+
+
+  <!-- . seção de textos informativos -->
+  <section id="informacoes">
+
+    <div class="info" id="info-1">
+      <img src="img/pets1.jpg" alt="" />
+      <div class="info-desc">
+        <h3>Cuide do seu companheiro peludo com amor e atenção. Nossos serviços veterinários <span>abrangentes</span>
+          garantem que
+          seu pet receba os melhores cuidados possíveis em todas as fases da vida - A jornada da saúde e felicidade do
+          seu pet começa aqui. Navegue pelo nosso site para descobrir dicas úteis, <span>informações</span> valiosas e
+          produtos que
+          vão fazer o seu pet se sentir amado.</h3>
+      </div>
+    </div>
+
+    <div class="info" id="info-2">
+      <div class="info-desc">
+        <h3>Doenças de pets? Aqui, priorizamos a <span>prevenção</span>. Oferecemos check-ups regulares e vacinações
+          para garantir
+          que seu pet tenha uma vida longa e <span>saudável</span> ao seu lado - Nós acreditamos que cada pet merece
+          amor
+          e cuidado excepcionais. Nossos serviços de grooming garantem que seu peludo se sinta e pareça incrível, pronto
+          para brilhar em qualquer ocasião.</h3>
+      </div>
+      <img src="img/pets2.jpg" alt="" />
+    </div>
+
+    <div class="info" id="info-3">
+      <img src="img/pets3.jpg" alt="" />
+      <div class="info-desc">
+        <h3>Seu pet é <span>único</span>, e seus cuidados também devem ser. Nossos veterinários estão prontos para criar
+          um plano de
+          saúde <span>personalizado</span> - Queremos simplificar a vida dos tutores de pets, oferecendo uma gama de
+          produtos essenciais e de alta qualidade. De coleiras a comedouros, temos tudo o que você precisa.</h3>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- . seção de formulario de contato -->
+  <div class="contato">
+
+
+    <div class="logotipo">
+      <img src="img/Logotipo.png" alt="">
+    </div>
+
+
+    <div id="fomulario">
+      <p>Formulário</p>
+
+      <form>
+        <div class="msg"></div>
+
+        <div class="grupo-form">
+          <label for="name">Nome</label>
+          <input type="text" id="name" placeholder="Digite seu nome" />
+        </div>
+
+        <div class="grupo-form">
+          <label>CPF </label>
+          <input type="text" id="cpf" name="cpf" minlength="14" maxlength="14" required class="form-control"
+            placeholder="xxx.xxx.xxx-xx" /><!-- onblur="TestaCPF" --->
+
+        </div>
+
+        <div class="grupo-form">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Digite seu e-mail" />
+        </div>
+
+        <button type="submit" id="send" class="btn btn-primary">Entrar</button>
+
+      </form>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- . footer -->
+  <footer id="footer">
+    <h3>Patas e Companhia - SETEC 2023</h3>
+    <p>IFPR - UMUARAMA</p>
+    <p><span>Email:</span> patas&comp@gmail.com <span>Fone:</span> (44)99990-9999</p>
+  </footer>
+
+
+  <script src="js/script.js" defer></script>
+
+
+</body>
+
+</html>
